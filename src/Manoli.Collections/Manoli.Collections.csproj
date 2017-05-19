@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.1</TargetFramework>
+    <Authors>Jean-Claude Manoli</Authors>
+    <Company>Milgo Systems</Company>
+    <Product>Manoli.Fx</Product>
+    <Description>Extends the .NET base class library generic collections with priority queues, list dictionaries and dictionary of dictionaries</Description>
+    <RepositoryUrl>https://github.com/jcsharp/dotnet</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/jcsharp/dotnet</PackageProjectUrl>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\dotnet.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>bin\Debug\netstandard1.1\Manoli.Collections.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>bin\Release\netstandard1.1\Manoli.Collections.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
